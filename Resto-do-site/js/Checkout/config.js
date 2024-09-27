@@ -4,7 +4,7 @@ $(function() {
 	    // array representing the format and columns of the cart, see
 	    // the cart columns documentation
 	    cartColumns: [
-	        { attr: "name" , label: "Nome" },
+	        { attr: "name", label: "Nome" },
 	        { attr: "price" , label: "Preço", view: 'currency' },
 	        { view: "decrement" , label: false },
 	        { attr: "quantity" , label: "Quant." },
@@ -19,7 +19,9 @@ $(function() {
 	    // how simpleCart should checkout, see the checkout reference for more info
 	    checkout: {
 	        type: "PayPal" ,
-	        email: "alvaro.santana1@hotmail.com"
+	        email: "30gerson30@gmail.com",
+			    success: "confirmaçao.htm" 
+
 	    },
 
 	    // set the currency, see the currency reference for more info
@@ -33,7 +35,9 @@ $(function() {
 	    language: "english-us",
 
 	    // array of item fields that will not be sent to checkout
+
 	    excludeFromCheckout: [],
+
 
 	    // custom function to add shipping cost
 	    shippingCustom: null,
